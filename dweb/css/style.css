@@ -1,0 +1,624 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: #8B4D8B;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 0; /* Botões retangulares */
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid #6B3D6B;
+    flex: 1; /* Cada botão ocupa espaço igual */
+}
+
+button:hover {
+    background-color: #A05FA0; /* Cor ao passar o mouse */
+}
+
+.btn-group {
+    border-radius: 0;
+}
+
+.d-flex {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block; /* Remove espaço embaixo da imagem */
+    margin: 0;
+    padding: 0;
+}
+.img-blur {
+    filter: blur(15px); /* Ajuste o valor para mais ou menos blur */
+}
+
+
+.login-container {
+    width: 400px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 2px solid #8B4D8B;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #8B4D8B;
+    margin-bottom: 30px;
+}
+
+.login-page {
+    background-image: url('../imagens/institucional.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 300px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.login-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../imagens/institucional.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: 1;
+}
+
+
+.btn-login:hover {
+    background-color: #A05FA0;
+}
+
+.login-container a {
+    color: #8B4D8B;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.login-container label {
+    color: #333;
+    margin-left: 5px;
+}
+
+.login-container input[type="radio"] {
+    cursor: pointer;
+}
+
+.quem-somos-page {
+    background-image: url('../imagens/institucional.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 300px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 50px 20px;
+}
+
+.quem-somos-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../imagens/institucional.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: 1;
+}
+
+.quem-somos-container {
+    max-width: 700px;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 2px solid #8B4D8B;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+.quem-somos-container h2 {
+    text-align: center;
+    color: #8B4D8B;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.quem-somos-container p {
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.quem-somos-container strong {
+    color: #8B4D8B;
+}
+
+
+.contato-page {
+    background-image: url('../imagens/institucional.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 300px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 50px 20px;
+}
+
+.contato-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../imagens/institucional.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: 1;
+}
+
+.contato-container {
+    max-width: 600px;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 2px solid #8B4D8B;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+.contato-container h2 {
+    text-align: center;
+    color: #8B4D8B;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.contato-info p {
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.contato-info strong {
+    color: #8B4D8B;
+    font-size: 18px;
+}
+
+.cases-page {
+    background-image: url('../imagens/institucional.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 300px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 50px 20px;
+}
+
+.cases-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../imagens/institucional.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: 1;
+}
+
+.cases-container {
+    max-width: 900px;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 2px solid #8B4D8B;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+.cases-container h2 {
+    text-align: center;
+    color: #8B4D8B;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.cases-container .intro {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.case-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 35px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #ddd;
+}
+
+.case-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.case-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 3px solid #8B4D8B;
+    margin-right: 25px;
+    flex-shrink: 0;
+}
+
+.case-content h3 {
+    color: #8B4D8B;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.case-content p {
+    color: #333;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.novo_agendamento{
+    text-align: center;
+    border-color: #333;
+}
+
+.meus_agendamentos{
+    text-align: center;
+    border-color: #333;
+}
+
+.link-minha-conta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #8B4D8B;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.link-minha-conta:hover {
+    color: #A05FA0;
+}
+
+.perfil-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 30px;
+    background-color: #f8f9fa;
+}
+
+.link-minha-conta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #8B4D8B;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.link-minha-conta:hover {
+    color: #A05FA0;
+}
+
+.link-minha-conta svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+.container-agendamentos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.secao-novo {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.secao-novo h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #8B4D8B;
+}
+
+.botao-adicionar {
+    background-color: white;
+    color: #8B4D8B;
+    padding: 40px;
+    text-align: center;
+    cursor: pointer;
+    border: 3px solid #8B4D8B;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    transition: all 0.3s;
+}
+
+.botao-adicionar:hover {
+    background-color: #f8f9fa;
+    border-color: #A05FA0;
+    color: #A05FA0;
+}
+
+.icone-mais {
+    font-size: 80px;
+    font-weight: bold;
+    display: block;
+    line-height: 1;
+}
+
+.botao-adicionar p {
+    margin: 10px 0 0 0;
+    font-size: 20px;
+}
+
+.secao-meus {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.secao-meus h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #8B4D8B;
+}
+
+.card-agendamento {
+    padding: 25px;
+    background-color: white;
+    border: 2px solid #8B4D8B;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.card-agendamento h4 {
+    color: #8B4D8B;
+    margin-bottom: 10px;
+}
+
+.card-agendamento h5 {
+    color: #666;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.data{
+    text-align: left;
+    color: #6B3D6B;
+}
+
+.div_perfil {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border: 2px solid #8B4D8B;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.campo-perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.campo-perfil:last-of-type {
+    border-bottom: none;
+}
+
+.h4_perfil {
+    color: #8B4D8B;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.h5_perfil {
+    color: #666;
+    font-size: 16px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.btn-editar {
+    background-color: transparent;
+    border: none;
+    color: #8B4D8B;
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.btn-editar:hover {
+    color: #A05FA0;
+}
+
+.deletar_conta {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+}
+
+.deletar_conta:hover {
+    background-color: #c82333;
+}
+
+button:hover {
+    background-color: inherit;
+}
+
+.container-agendamento {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: white;
+    border: 2px solid #8B4D8B;
+    border-radius: 10px;
+}
+
+.titulo-agendamento {
+    text-align: center;
+    color: #8B4D8B;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.grid-agendamento {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.coluna-esquerda label,
+.coluna-meio label,
+.coluna-direita label {
+    color: #8B4D8B;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.campo-form {
+    margin-bottom: 25px;
+}
+
+.calendario {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.grid-horarios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.btn-horario {
+    background-color: white;
+    color: #8B4D8B;
+    border: 2px solid #8B4D8B;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.btn-horario:hover {
+    background-color: #8B4D8B;
+    color: white;
+}
+
+.btn-horario.selecionado {
+    background-color: #8B4D8B;
+    color: white;
+}
+
+.btn-confirmar {
+    width: 100%;
+    background-color: #8B4D8B;
+    color: white;
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-confirmar:hover {
+    background-color: #A05FA0;
+}
+
+.perfil-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #f8f9fa;
+}
+
+.id-usuario {
+    margin: 0;
+}
+
+.id-usuario p {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.id-usuario strong {
+    color: #8B4D8B;
+    font-size: 18px;
+}
